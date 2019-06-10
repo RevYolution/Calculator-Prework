@@ -6,7 +6,6 @@ namespace Calculator_Prework
     {
         static void Main(string[] args)
         {
-            // Console.WriteLine("Hello World!");
             double firstNumber;
             double secondNumber;
             Console.WriteLine("Please input 2 numbers: ");
@@ -20,7 +19,7 @@ namespace Calculator_Prework
             Console.WriteLine("Type your second number then hit Enter:");
             secondNumber = Convert.ToDouble(Console.ReadLine());
 
-            //User selects what kind of math they want to perform
+            //User selects what kind of mathmatical operation they want to perform
             Console.WriteLine("Select math to be done:");
             Console.WriteLine("Hit 1 for Addition");
             Console.WriteLine("Hit 2 for Subtraction");
@@ -28,31 +27,31 @@ namespace Calculator_Prework
             Console.WriteLine("Hit 4 for Division");
             int selection = Convert.ToInt32(Console.ReadLine());
 
-            //Based off user selection math operation will be chosen and performed
+            //Based off user selection mathmatical operation will be chosen and performed
             switch(selection)
             {
                 case 1:
                     {
                         double resultSelection1 = Addition(firstNumber, secondNumber);
-                        Console.WriteLine("Your result is {0}", resultSelection1);
+                        Console.WriteLine("The result of ({0}) + ({1}) is ({2})", firstNumber, secondNumber, resultSelection1);
                         break;
                     }
                 case 2:
                     {
                         double resultSelection2 = Subtraction(firstNumber, secondNumber);
-                        Console.WriteLine("Your result is {0}", resultSelection2);
+                        Console.WriteLine("The result of ({0}) - ({1}) is ({2})", firstNumber, secondNumber, resultSelection2);
                         break;
                     }
                 case 3:
                     {
                         double resultSelection3 = Multiplication(firstNumber, secondNumber);
-                        Console.WriteLine("Your result is {0}", resultSelection3);
+                        Console.WriteLine("The result of ({0}) * ({1}) is ({2})", firstNumber, secondNumber, resultSelection3);
                         break;
                     }
                 case 4:
                     {
                         double resultSelection4 = Divison(firstNumber, secondNumber);
-                        Console.WriteLine("Your result is {0}", resultSelection4);
+                        Console.WriteLine("The result of ({0}) / ({1}) is ({2})", firstNumber, secondNumber, resultSelection4);
                         break;
                     }
             }
