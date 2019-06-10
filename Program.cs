@@ -6,6 +6,7 @@ namespace Calculator_Prework
     {
         static void Main(string[] args)
         {
+            //Setup variables for Calculator
             double firstNumber;
             double secondNumber;
             Console.WriteLine("Please input 2 numbers: ");
@@ -13,7 +14,6 @@ namespace Calculator_Prework
             //User inputs first number
             Console.WriteLine("Type your first number then hit Enter:");
             firstNumber = Convert.ToDouble(Console.ReadLine());
-            //Console.WriteLine(firstNumber);
 
             //User inputs second number
             Console.WriteLine("Type your second number then hit Enter:");
